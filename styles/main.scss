@@ -1,5 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card {
+  height: 320px;
+  width: 525px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__headingContainer {
+    position: absolute;
+    width: 100%;
+
+    #mainHeading {
+      color: yellow;
+      font-size: 41px;
+    }
+  }
+
+  &__textContainer {
+    position: absolute;
+    width: 100%;
+
+    font-size: 30px;
+    &--1 {
+      color: red;
+      .line {
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &--2 {
+      color: blue;
+      .line {
+        top: 155px;
+        left: 50px;
+      }
+    }
+    &--3 {
+      color: pink;
+      .line {
+        top: 162px;
+        left: 250px;
+        transform: rotate(17deg);
+      }
+      .line2 {
+        top: 190px;
+        left: 180px;
+      }
+    }
+    &--4 {
+      top: 185px;
+      left: 100px;
+      color: purple;
+      font-size: 20px;
+    }
+
+    .line {
+      position: absolute;
+      width: fit-content;
+      text-align: center;
+    }
+  }
+
+  &__imgContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    .confettie {
+      height: 320px;
+      width: auto;
+    }
+  }
+}
+
+.background {
+  opacity: 1;
+  max-height: 320px;
+  width: auto;
+
+  .stage {
+    height: 100%;
+    width: auto;
+  }
 }
