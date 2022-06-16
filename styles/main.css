@@ -33,10 +33,12 @@ body {
 .card__headingContainer {
   position: absolute;
   width: 100%;
+  left: 154px;
+  top: 102px;
 }
 .card__headingContainer #mainHeading {
   color: yellow;
-  font-size: 41px;
+  font-size: 55px;
 }
 .card__textContainer {
   position: absolute;
@@ -63,8 +65,8 @@ body {
   color: pink;
 }
 .card__textContainer--3 .line {
-  top: 162px;
-  left: 250px;
+  top: 153px;
+  left: 286px;
   -webkit-transform: rotate(17deg);
           transform: rotate(17deg);
 }
@@ -73,7 +75,7 @@ body {
   left: 180px;
 }
 .card__textContainer--4 {
-  top: 185px;
+  top: 116px;
   left: 100px;
   color: purple;
   font-size: 20px;

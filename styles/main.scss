@@ -22,10 +22,14 @@ body {
   &__headingContainer {
     position: absolute;
     width: 100%;
+    left: 154px;
+    top: 102px;
+    // transform: translate(0px);
+    // transform-origin: "center";
 
     #mainHeading {
       color: yellow;
-      font-size: 41px;
+      font-size: 55px;
     }
   }
 
@@ -52,8 +56,8 @@ body {
     &--3 {
       color: pink;
       .line {
-        top: 162px;
-        left: 250px;
+        top: 153px;
+        left: 286px;
         transform: rotate(17deg);
       }
       .line2 {
@@ -62,7 +66,7 @@ body {
       }
     }
     &--4 {
-      top: 185px;
+      top: 116px;
       left: 100px;
       color: purple;
       font-size: 20px;
