@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: #ea5c2b;
 }
 
 .card {
@@ -21,33 +21,61 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 33px;
-  box-shadow: 16px 12px 20px -1px rgba(0,0,0,0.75);
+  box-shadow: 16px 12px 20px -1px rgba(0, 0, 0, 0.75);
+
+  &__startContainer {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: #ff7f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .playBtn {
+      background-color: #ea5c2b;
+      border-radius: 50%;
+      height: 140px;
+      width: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 16px 12px 20px -1px rgba(0, 0, 0, 0.75);
+
+      &__text {
+        font-family: "Modak", cursive;
+        color: #95cd41;
+        font-size: 45px;
+      }
+    }
+  }
 
   &__headingContainer {
     position: absolute;
-    font-family: 'Modak', cursive;
+    font-family: "Modak", cursive;
     font-size: 50px;
     letter-spacing: 5px;
     &--text {
       position: absolute;
-      color: orange;
+      color: #f6d860;
     }
-      .name {
-        top: 33px;
-        left: -140px;
-      }
-      .age {
-        top: 116px;
-        left: -64px;
-      }
+    .name {
+      top: 33px;
+      left: -140px;
+    }
+    .age {
+      top: 116px;
+      left: -64px;
+    }
   }
 
   &__textContainer {
     position: absolute;
     width: 100%;
     height: 100%;
-    font-family: 'Chewy';
+    font-family: "Seymour One", sans-serif;
     font-size: 30px;
+    color: #ff7f3f;
 
     .line {
       position: absolute;
@@ -58,105 +86,103 @@ body {
     }
 
     &--1 {
-      color: purple;
+      // color: purple;
       font-size: 35px;
       .line1 {
-        top: 83px;
-        left: 52px;
+        top: 109px;
+        left: -3px;
       }
 
       .line2 {
         top: 14px;
-        &__part1{
+        &__part1 {
           top: 73px;
-          left: 60px;
+          left: 25px;
         }
-        &__part2{
+        &__part2 {
           top: 136px;
-          left: 125px;
+          left: 52px;
         }
-        &__part3{
+        &__part3 {
           top: 205px;
-          left: 206px;
+          left: 76px;
         }
       }
 
       .line3 {
-        &__part1{
+        &__part1 {
           top: 70px;
-          left: 272px;
+          left: 156px;
         }
-        &__part2{
+        &__part2 {
           top: 108px;
-          left: 286px;
+          left: 187px;
         }
-        &__part3{
-          top: 209px;
-          left: 59px;
+        &__part3 {
+          top: 198px;
+          left: 53px;
         }
-        &__part4{
+        &__part4 {
           top: 245px;
-          left: 91px;
+          left: 56px;
         }
       }
     }
     &--2 {
-      color: blue;
-      
       .line1 {
-        top: 249px;
-        left: 124px;
+        top: 230px;
+        left: 15px;
       }
 
       .line2 {
-        &__part1{
-          top: 145px;
-          left: 126px;
+        &__part1 {
+          top: 140px;
+          left: 33px;
         }
-        &__part2{
+        &__part2 {
           font-size: 40px;
-          top: 190px;
-          left: 213px;
+          top: 175px;
+          left: 176px;
         }
       }
     }
 
     &--3 {
-      color: pink;
       .line1 {
+        color: #f6d860;
         font-size: 35px;
-        top: 198px;
-        left: 162px;
+        top: 176px;
+        left: 119px;
         transform: rotate(-17deg);
         transform-origin: center;
       }
 
       .line2 {
-        &__part1{
-          top: 118px;
+        &__part1 {
+          top: 120px;
           left: 104px;
         }
-        &__part2{
-          top: 196px;
-          left: 257px;
+        &__part2 {
+          top: 190px;
+          left: 207px;
         }
       }
     }
 
     &--4 {
-    color: wheat;
-    font-size: 33px;
+      font-size: 33px;
       .header {
         position: absolute;
         top: 33px;
-        left: 93px;
+        left: 127px;
+        color: #f6d860;
       }
-      
+
       .showlist {
         font-size: 25px;
         position: absolute;
-        top: 146px;
-        left: 191px;
+        top: 154px;
+        left: 122px;
         list-style: none;
         text-align: center;
 
@@ -164,8 +190,6 @@ body {
           text-decoration: none;
           color: inherit;
         }
-
-      
       }
     }
 
@@ -180,7 +204,23 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: 10;
 
+    .magicHat {
+      position: absolute;
+      height: 48px;
+      width: auto;
+      top: 238px;
+      left: 32px;
+      z-index: 11;
+    }
+    .dove {
+      position: absolute;
+      height: 45px;
+      width: auto;
+      top: 238px;
+      left: 34px;
+    }
     .confettie {
       height: 320px;
       width: auto;
