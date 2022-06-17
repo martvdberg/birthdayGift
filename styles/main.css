@@ -6,6 +6,8 @@
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,7 +17,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background-color: lightblue;
 }
 
 .card {
@@ -29,57 +31,170 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 33px;
+  -webkit-box-shadow: 16px 12px 20px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 16px 12px 20px -1px rgba(0, 0, 0, 0.75);
 }
+
 .card__headingContainer {
   position: absolute;
-  width: 100%;
-  left: 154px;
-  top: 102px;
+  font-family: 'Modak', cursive;
+  font-size: 50px;
+  letter-spacing: 5px;
 }
-.card__headingContainer #mainHeading {
-  color: yellow;
-  font-size: 55px;
+
+.card__headingContainer--text {
+  position: absolute;
+  color: orange;
 }
+
+.card__headingContainer .name {
+  top: 33px;
+  left: -140px;
+}
+
+.card__headingContainer .age {
+  top: 116px;
+  left: -64px;
+}
+
 .card__textContainer {
   position: absolute;
   width: 100%;
+  height: 100%;
+  font-family: 'Chewy';
   font-size: 30px;
 }
+
+.card__textContainer .line {
+  position: absolute;
+}
+
+.card__textContainer .line__block {
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .card__textContainer--1 {
-  color: red;
+  color: purple;
+  font-size: 35px;
 }
-.card__textContainer--1 .line {
-  top: 80px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+
+.card__textContainer--1 .line1 {
+  top: 83px;
+  left: 52px;
 }
+
+.card__textContainer--1 .line2 {
+  top: 14px;
+}
+
+.card__textContainer--1 .line2__part1 {
+  top: 73px;
+  left: 60px;
+}
+
+.card__textContainer--1 .line2__part2 {
+  top: 136px;
+  left: 125px;
+}
+
+.card__textContainer--1 .line2__part3 {
+  top: 205px;
+  left: 206px;
+}
+
+.card__textContainer--1 .line3__part1 {
+  top: 70px;
+  left: 272px;
+}
+
+.card__textContainer--1 .line3__part2 {
+  top: 108px;
+  left: 286px;
+}
+
+.card__textContainer--1 .line3__part3 {
+  top: 209px;
+  left: 59px;
+}
+
+.card__textContainer--1 .line3__part4 {
+  top: 245px;
+  left: 91px;
+}
+
 .card__textContainer--2 {
   color: blue;
 }
-.card__textContainer--2 .line {
-  top: 155px;
-  left: 50px;
+
+.card__textContainer--2 .line1 {
+  top: 249px;
+  left: 124px;
 }
+
+.card__textContainer--2 .line2__part1 {
+  top: 145px;
+  left: 126px;
+}
+
+.card__textContainer--2 .line2__part2 {
+  font-size: 40px;
+  top: 190px;
+  left: 213px;
+}
+
 .card__textContainer--3 {
   color: pink;
 }
-.card__textContainer--3 .line {
-  top: 153px;
-  left: 286px;
-  -webkit-transform: rotate(17deg);
-          transform: rotate(17deg);
+
+.card__textContainer--3 .line1 {
+  font-size: 35px;
+  top: 198px;
+  left: 162px;
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
-.card__textContainer--3 .line2 {
-  top: 190px;
-  left: 180px;
+
+.card__textContainer--3 .line2__part1 {
+  top: 118px;
+  left: 104px;
 }
+
+.card__textContainer--3 .line2__part2 {
+  top: 196px;
+  left: 257px;
+}
+
 .card__textContainer--4 {
-  top: 116px;
-  left: 100px;
-  color: purple;
-  font-size: 20px;
+  color: wheat;
+  font-size: 33px;
 }
+
+.card__textContainer--4 .header {
+  position: absolute;
+  top: 33px;
+  left: 93px;
+}
+
+.card__textContainer--4 .showlist {
+  font-size: 25px;
+  position: absolute;
+  top: 146px;
+  left: 191px;
+  list-style: none;
+  text-align: center;
+}
+
+.card__textContainer--4 .showlist a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card__textContainer .line {
   position: absolute;
   width: -webkit-fit-content;
@@ -87,22 +202,25 @@ body {
   width: fit-content;
   text-align: center;
 }
+
 .card__imgContainer {
   height: 100%;
   width: 100%;
   position: absolute;
 }
+
 .card__imgContainer .confettie {
   height: 320px;
   width: auto;
 }
 
 .background {
-  opacity: 1;
   max-height: 320px;
   width: auto;
 }
+
 .background .stage {
   height: 100%;
   width: auto;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

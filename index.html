@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <script
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">    
+<script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
       defer
     ></script>
@@ -18,30 +22,47 @@
         <img src="./assets/img/stage.jpg" alt="backdrop" class="stage" />
       </div>
       <div class="card__headingContainer">
-        <h1 id="mainHeading">Ruurt</h1>
+        <h1 class="card__headingContainer--text name">Ruurt</h1>
+        <h1 class="card__headingContainer--text age">70!</h1>
       </div>
       <div class="card__textContainer card__textContainer--1">
         <p class="line line1">Aangeboden door alle kinderen</p>
-        <p class="line line2">
-          Een geheel <span class="hl">verzorgde avond</span> die je zal verbazen
-        </p>
-        <p class="line line3">
-          Een avond vol <span class="hl">heerlijk eten</span> en hoogstaand
-          <span class="hl">entertainment</span>
-        </p>
+       
+        <div class="line line2">
+          <span class="line__block line2__part1">Een geheel </span>
+          <span class="line__block line2__part2 hl">verzorgde avond</span>
+          <span class="line__block  line2__part3">die je zal verbazen</span>
+        </div>
+
+        <div class="line line3">
+          <span class="line__block line3__part1">Een avond vol </span>
+          <span class="line__block line3__part2 hl">heerlijk eten </span>
+          <span class="line__block  line3__part3">en hoogstaand </span>
+          <span class="line__block line3__part4 hl">entertainment</span>
+        </div>
       </div>
+
       <div class="card__textContainer card__textContainer--2">
         <p class="line line1">Let goed op je spullen...</p>
-        <p class="line line2">
-          Maar vooral ook op de <span class="hl">show!</span>
-        </p>
+        
+        <div class="line line2">
+          <span class="line__block line2__part1">Maar vooral ook op de </span>
+          <span class="line__block line2__part2 hl">show!</span>
+        </div>
       </div>
+
       <div class="card__textContainer card__textContainer--3">
         <p class="line line1">Welke show?</p>
-        <p class="line line2">Dat is <span class="hl">geheel aan jou</span></p>
+
+        <div class="line line2">
+          <span class="line__block line2__part1">Dat is </span>
+          <span class="line__block line2__part2 hl">geheel aan jou</span>
+        </div>
       </div>
+
+
       <div class="card__textContainer card__textContainer--4">
-        <p class="header">Hier een paar opties</p>
+        <p class="header">Hier een paar voorbeelden</p>
         <ul class="showlist">
           <li class="show">
             <a href="#" target="_blank" rel="noopener noreferrer"
@@ -54,8 +75,7 @@
             >
           </li>
           <li class="show">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              >Iemand anders</a
+            <a href="https://www.google.com/search?q=magic+diner+show&rlz=1C1GCEB_enNL1007NL1007&ei=OaOsYuneLpLasAeA3JqwCw&ved=0ahUKEwip34Dt67T4AhUSLewKHQCuBrYQ4dUDCA4&uact=5&oq=magic+diner+show&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAgAEA06BwgAEEcQsAM6BQgAEJECOgQIABBDOgcILhDUAhBDOggILhDUAhCRAjoFCAAQgAQ6DgguEIAEEMcBEKMCENQCOgoILhDHARCvARBDOgQILhBDOgsILhCABBDHARCvAToFCC4QgAQ6CAgAEB4QFhAKOgYIABAeEBY6CQgAEB4QyQMQFjoGCAAQHhANOggIABAeEA0QCkoECEEYAEoECEYYAFDBFFijM2CpNGgBcAF4AIABjwGIAZsJkgEEMTIuNJgBAKABAcgBCMABAQ&sclient=gws-wiz" target="_blank">Iemand anders...</a
             >
           </li>
         </ul>
