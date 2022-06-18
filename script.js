@@ -68,10 +68,10 @@ document.querySelector(".playBtn").addEventListener("click", () => {
       { opacity: 0, y: -50, duration: 0.7, stagger: 0.2 },
       ">1.5"
     )
-    .to(".b2", { y: -500, duration: 4, ease: "linear" }, "<-4")
+    .to(".b2", { y: -520, duration: 5, ease: "linear" }, "<-5")
 
     .add("block_2")
-    .to(".b3", { y: -500, duration: 4, ease: "linear" }, "<-4")
+    .to(".b3", { y: -500, duration: 5, ease: "linear" }, "<-5")
 
     .from(
       ".card__textContainer--2 .line1",
@@ -98,7 +98,7 @@ document.querySelector(".playBtn").addEventListener("click", () => {
     )
 
     .from(".card__textContainer--3 .line1", { opacity: 0 }, ">+1")
-    .to(".b4", { y: -500, duration: 4, ease: "linear" }, "<-4")
+    .to(".b4", { y: -500, duration: 5, ease: "linear" }, "<-5")
     .from(
       ".card__textContainer--3 .line2 .line__block",
       { opacity: 0, scale: 0.6, stagger: 0.2, duration: 0.6, ease: "bounce" },
@@ -110,7 +110,7 @@ document.querySelector(".playBtn").addEventListener("click", () => {
       { opacity: 0, scale: 0.6, stagger: 0.2, duration: 0.6, ease: "bounce" },
       ">+2"
     )
-    .to(".b5", { y: -500, duration: 4, ease: "linear" }, "<-4")
+    .to(".b5", { y: -500, duration: 5, ease: "linear" }, "<-5")
     .from(
       ".card__textContainer--4 .header",
       { opacity: 0, y: -30, duration: 1 },
@@ -127,7 +127,7 @@ document.querySelector(".playBtn").addEventListener("click", () => {
       { opacity: 0, rotation: -360, duration: 0.8, scale: 0 },
       ">+1"
     )
-    .to(".b6", { y: -500, duration: 4, ease: "linear" }, "<-4");
+    .to(".b6", { y: -500, duration: 4, ease: "linear" }, "<-5");
 });
 
 document.querySelector(".replayBtn").addEventListener("click", () => {
